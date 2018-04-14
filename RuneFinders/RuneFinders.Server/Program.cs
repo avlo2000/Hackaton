@@ -10,6 +10,8 @@ namespace RuneFinders.Server
     {
         static void Main(string[] args)
         {
+            GameServer RuneFinder = new GameServer();
+            RuneFinder.ProcessGame();
         }
     }
 }

@@ -34,26 +34,19 @@ namespace RuneFinders.Server
             {
                 _server = new TcpListener(_localAddr, _port);
                 _server.Start();
+                Console.WriteLine("Connecting to player 1");
                 client1 = _server.AcceptTcpClient();
-                //client2 = _server.AcceptTcpClient();
-                //client3 = _server.AcceptTcpClient();
-                //client4 = _server.AcceptTcpClient();
+                Console.WriteLine("Connecting to player 1");
+                client2 = _server.AcceptTcpClient();
+                Console.WriteLine("Connecting to player 1");
+                client3 = _server.AcceptTcpClient();
+                Console.WriteLine("Connecting to player 1");
+                client4 = _server.AcceptTcpClient();
 
                 stream1 = client1.GetStream();
-                //NetworkStream stream2 = client2.GetStream();
-                //NetworkStream stream3 = client3.GetStream();
-                //NetworkStream stream4 = client4.GetStream();
-
-                
-
-                
-
-                //OldState = NewState;
-
-                OldState.ChangeState();
-
-
-                // Serializer.Serialize(stream1, New);
+                stream2 = client2.GetStream();
+                stream3 = client3.GetStream();
+                stream4 = client4.GetStream();
             }
             catch(Exception ex)
             {
@@ -68,13 +61,17 @@ namespace RuneFinders.Server
 
         public void ProcessGame()
         {
-            Serializer.RegisterTypes(new[] { typeof(State), typeof(Hero), typeof(Hexagon), typeof(Item) });
+            Serializer.RegisterTypes(new[] { typeof(State) });
 
             while (true)
             {
                 NewState = (State)Serializer.Deserialize(stream1);
 
+                NewState.ChangeState();
+
+                Serializer.Serialize(stream1, NewState);
             }
+
         }
     }
 }

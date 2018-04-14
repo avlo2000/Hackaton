@@ -19,10 +19,17 @@ namespace RuneFinders.Connection
             Cycle = 0;
         }
       
+        
+
         public void ChangeState()
         {
             Turn++;
             Cycle = Turn % 4;
+
+            if(Turn % 10 == 0)
+            {
+                
+            }
         }
     }
 }
