@@ -6,18 +6,22 @@ using System.Threading.Tasks;
 
 namespace RuneFinders.Connection
 {
-    class State : IState
+    public class State : IState
     {
-        public IHexagon[,] hex_matrix;
-        public List<Hero> heroes;
+        public IHexagon[,] HexMatrix;
+        public int Turn;
+        public int Cycle;
+        public List<Hero> Heroes;
+
         public State()
         {
 
         }
-
-        public void ChangeState(IState newState)
+      
+        public void ChangeState()
         {
-            throw new NotImplementedException();
+            Turn++;
+            Cycle = Turn % 4;
         }
     }
 }

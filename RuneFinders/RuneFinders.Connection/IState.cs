@@ -8,6 +8,6 @@ namespace RuneFinders.Connection
 {
     interface IState
     {
-        void ChangeState(IState newState);
+        void ChangeState();
     }
 }

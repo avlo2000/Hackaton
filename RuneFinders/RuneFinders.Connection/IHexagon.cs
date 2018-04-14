@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RuneFinders.Connection
 {
-    interface IHexagon
+    public interface IHexagon
     {
 
     }

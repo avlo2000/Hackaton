@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace RuneFinders.Connection
 {
-   class Hero
+    public class Hero
     {
         public int Strength { get; set; }
         public int Armor { get; set; }
         public int Level { get; }
         public int LevelPoints { get; set; }
         public int Speed { get; }
-
+        public List<Item> Backpack; 
 
     }
 }

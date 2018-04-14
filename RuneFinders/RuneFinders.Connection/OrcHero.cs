@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RuneFinders.Connection
 {
-    class OrcHero : Hero
+    public class OrcHero : Hero
     {
         //additional functions of this class 
     }
