@@ -8,8 +8,13 @@ namespace RuneFinders.Connection
 {
     class State : IState
     {
-        int[,] hex_matrix;
-        Hero[] heroes;
+        public IHexagon[,] hex_matrix;
+        public List<Hero> heroes;
+        public State()
+        {
+
+        }
+
         public void ChangeState(IState newState)
         {
             throw new NotImplementedException();
