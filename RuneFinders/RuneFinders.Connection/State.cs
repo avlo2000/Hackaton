@@ -8,14 +8,15 @@ namespace RuneFinders.Connection
 {
     public class State : IState
     {
-        public IHexagon[,] HexMatrix;
+        public Hexagon[,] HexMatrix;
         public int Turn;
         public int Cycle;
         public List<Hero> Heroes;
 
         public State()
         {
-
+            Turn = 0;
+            Cycle = 0;
         }
       
         public void ChangeState()

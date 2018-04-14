@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HumanHero.cs" />
-    <Compile Include="IHexagon.cs" />
+    <Compile Include="Hexagon.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="OrcHero.cs" />
     <Compile Include="Hero.cs" />
