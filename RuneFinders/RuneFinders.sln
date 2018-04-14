@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuneFinders.Server", "RuneF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuneFinders.Client", "RuneFinders.Client\RuneFinders.Client.csproj", "{8C7E9799-7D0F-4462-9D21-104405ABD2B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuneFinders.Connection", "RuneFinders.Connection\RuneFinders.Connection.csproj", "{57623D95-840A-4E1F-9531-33468DA49A22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8C7E9799-7D0F-4462-9D21-104405ABD2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C7E9799-7D0F-4462-9D21-104405ABD2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C7E9799-7D0F-4462-9D21-104405ABD2B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57623D95-840A-4E1F-9531-33468DA49A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57623D95-840A-4E1F-9531-33468DA49A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57623D95-840A-4E1F-9531-33468DA49A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57623D95-840A-4E1F-9531-33468DA49A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
